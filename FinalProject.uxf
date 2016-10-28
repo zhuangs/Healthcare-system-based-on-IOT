@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>492</x>
+      <y>0</y>
+      <w>108</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>Business
+--
+NetworkList&lt;Network&gt;;
+--
+BusinessInstance();</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>6</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Configure Business
+--
+Configure();
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>12</y>
+      <w>48</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>492</x>
+      <y>78</y>
+      <w>108</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>Network
+--
+String netWorkName;
+EnterpriseList&lt;Enterprise&gt;;
+
+--
+BusinessInstance();</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>36</y>
+      <w>18</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>90</y>
+      <w>48</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>72</y>
+      <w>90</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>NetworkDir
+--
+NetworkList&lt;Network&gt;;
+--
+AddNetwork();
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>516</x>
+      <y>114</y>
+      <w>18</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>468</x>
+      <y>156</y>
+      <w>132</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>Enterprise
+--
+Enterprise Hospital;
+Enterprise Mayor's office;
+Enterprise InsuranceCompany;
+Enterprise EPA;
+Enterprise HPD;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>186</y>
+      <w>48</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>168</y>
+      <w>120</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>EnterpriseDir
+--
+EnterpriseList&lt;Enterprise&gt;;
+--
+AddEnterprise();</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>498</x>
+      <y>216</y>
+      <w>18</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>258</y>
+      <w>132</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Organization
+--
+int organizationId;
+EmployeeList&lt;Employee&gt;;
+PatientList&lt;Patient&gt;;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>576</x>
+      <y>276</y>
+      <w>48</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>612</x>
+      <y>258</y>
+      <w>120</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>OrganizationDir
+--
+OrganizationList&lt;Organization&gt;;
+--
+AddOrganization();</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>354</x>
+      <y>342</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Patient
+--
+int PatientId;
+String firstName;
+String lastName;
+int age;
+String address;
+String gender;
+Insurance insurance;
+VitalSignHistory vsh;
+HospitalVisitHistory hvh;
+Home home;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>474</x>
+      <y>300</y>
+      <w>36</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;150.0;40.0;150.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>456</x>
+      <y>450</y>
+      <w>18</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>558</y>
+      <w>120</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>PatientDir
+--
+PatientList&lt;Patient&gt;;
+--
+AddPatient();
+DeletePatient();
+SearchPatient();</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>18</x>
+      <y>270</y>
+      <w>126</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>VitalSign
+--
+float BloodPressure;
+float Respiration;
+float Pulse;
+float Temperature;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>318</x>
+      <y>300</y>
+      <w>102</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0;150.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>24</x>
+      <y>354</y>
+      <w>126</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>HospitalVisit
+--
+Date timestamp;
+String abnormalVs;
+String result;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>324</x>
+      <y>384</y>
+      <w>42</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>432</y>
+      <w>126</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>Insurance
+--
+String InsuranceName;
+String coverRange;
+String validDate;
+String InsuranceId;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>294</x>
+      <y>438</y>
+      <w>72</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>234</x>
+      <y>510</y>
+      <w>126</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Home
+--
+int HomeId;
+AirCondition ac;
+String adress;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>354</x>
+      <y>450</y>
+      <w>54</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;70.0;120.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>138</x>
+      <y>300</y>
+      <w>72</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>198</x>
+      <y>276</y>
+      <w>126</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>VistalSignHistory
+--
+VitalSignList&lt;VitalSign&gt;;
+--
+AddVitalSign();
+DeleteVitalSign();
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>204</x>
+      <y>354</y>
+      <w>126</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>HospitalVisitHistory
+--
+HospitalVisitList&lt;HospitalVisit&gt;;
+--
+addHospitalVisit();
+deleteHospitalVisit();
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>120</x>
+      <y>468</y>
+      <w>66</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>438</y>
+      <w>126</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>InsuranceDir
+--
+InsuranceList&lt;VitalSign&gt;;
+--
+AddVitalSign();
+DeleteVitalSign();
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>192</x>
+      <y>552</y>
+      <w>96</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;80.0;140.0;80.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>72</x>
+      <y>564</y>
+      <w>126</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>HomeDir
+--
+HomeList&lt;Home&gt;;
+--
+AddVitalSign();
+DeleteVitalSign();
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>144</x>
+      <y>378</y>
+      <w>72</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>72</x>
+      <y>648</y>
+      <w>126</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Community
+--
+HomeList&lt;Home&gt;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>234</x>
+      <y>642</y>
+      <w>126</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>CommunityDir
+--
+CommunityList&lt;Community&gt;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>192</x>
+      <y>660</y>
+      <w>54</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>102</x>
+      <y>48</y>
+      <w>126</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Mayour's office
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>66</y>
+      <w>126</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Hospital
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>168</y>
+      <w>126</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Insurance Company
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>102</x>
+      <y>120</y>
+      <w>126</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>EPA
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>102</x>
+      <y>198</y>
+      <w>126</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>HPD
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
